@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* Colores */
+/* $azulOscuro: #07617D; */
+/* Pesos tipográficos */
+/* Generales */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  max-width: 1449px;
+  margin: auto;
+}
+
+/* Desktop */
+header {
+  width: 100%;
+  max-width: 1449px;
+  height: 100px;
+  background-color: #FFFFFF;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 6%;
+  z-index: 20;
+}
+
+header #logoKforms {
+  width: 50%;
+}
+
+header #logoKforms img {
+  width: 90%;
+  max-width: 290px;
+}
+
+header #contBotonIngresar {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header #contBotonIngresar #botonIngresar {
+  height: 40px;
+  width: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #07617D;
+  border-radius: 12px;
+}
+
+header #contBotonIngresar #botonIngresar p {
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+/* Presentación App */
+#presentacionApp {
+  padding: 100px 6% 0 6%;
+  background-color: #07617D;
+  border-radius: 0px 0px 60px 60px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#presentacionApp #textosPresentacion h1#tituloPresentacion {
+  color: #FFFFFF;
+  font-weight: normal;
+  font-size: 50px;
+  padding: 50px 0 40px 0;
+  text-align: center;
+}
+
+#presentacionApp #textosPresentacion h1#tituloPresentacion br {
+  display: none;
+}
+
+#presentacionApp #textosPresentacion h1#tituloPresentacion #resaltadoCeleste {
+  background-color: #15A0B7;
+}
+
+#presentacionApp #textosPresentacion .iconosDownload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#presentacionApp #textosPresentacion .iconosDownload img {
+  height: 50px;
+  padding: 0 10px;
+}
+
+#presentacionApp #imgCelPresentacion {
+  padding: 60px 0 90px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#presentacionApp #imgCelPresentacion #imgCelular {
+  width: 293.89px;
+  height: 606px;
+  background-color: red;
+  border-radius: 48px;
+  -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#presentacionApp #imgCelPresentacion #circuloFondoPpal {
+  background-color: #07617D;
+  mix-blend-mode: multiply;
+  border-radius: 50%;
+  width: 700px;
+  height: 700px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+  bottom: 500px;
+  margin-bottom: -700px;
+}
+
+/* 768px */
+/* 1024px */
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 0 5%;
+  }
+  main #presentacionApp {
+    border-radius: 0px 0px 128px 128px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main #presentacionApp #textosPresentacion {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  main #presentacionApp #textosPresentacion h1#tituloPresentacion {
+    width: 650px;
+    padding-top: 100px;
+    text-align: left;
+    margin-top: -130px;
+  }
+  main #presentacionApp #textosPresentacion h1#tituloPresentacion br {
+    display: inherit;
+  }
+  main #presentacionApp #textosPresentacion .iconosDownload {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  main #presentacionApp #textosPresentacion .iconosDownload img {
+    height: 67px;
+    padding: 0 20px 0 0;
+  }
+  main #presentacionApp #imgCelPresentacion {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-left: -100px;
+  }
+  main #presentacionApp #imgCelPresentacion #circuloFondoPpal {
+    width: 770px;
+    height: 770px;
+    margin-bottom: -770px;
+  }
+}
+
+/* 1449px */
+@media screen and (min-width: 1449px) {
+  header {
+    padding: 0 10%;
+  }
+  main #presentacionApp {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

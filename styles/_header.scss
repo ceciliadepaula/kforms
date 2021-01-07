@@ -1,0 +1,40 @@
+/* Desktop */
+
+header{
+    width: 100%;
+    max-width: 1449px;
+    height: 100px;
+    background-color: $blanco;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 6%;
+    z-index: 20;
+    #logoKforms{
+        width: 50%;
+        img{
+            width: 90%;
+            max-width: 290px;
+        }
+    }
+    #contBotonIngresar{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+            #botonIngresar{
+            height: 40px;
+            width: 140px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background: $azul;
+            border-radius: 12px;
+            p{
+                color: $blanco;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+/* Colores */
+
+$blanco:  #FFFFFF;
+$gris: #EBF0F5;
+$azul: #07617D;
+/* $azulOscuro: #07617D; */
+$celeste: #15A0B7;
+
+/* Pesos tipográficos */
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+/* Generales */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    max-width: 1449px;
+    margin: auto;
+}
