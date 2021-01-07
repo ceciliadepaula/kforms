@@ -37,6 +37,26 @@
                 }
             }
         }
+
+        #loQueOfrecemos{
+            ul{
+                grid-template-rows: 1fr; 
+                grid-template-columns: 3fr 1fr 3fr 1fr 3fr 1fr 3fr;
+                width: 90%;
+                margin: auto;
+                .elementosLista{
+                    height: 350px;
+                }
+                .flecha{
+                    img{
+                        transform: rotate(0deg);
+                    }
+                }
+                .sinFlecha{
+                    display: inherit;
+                }
+            }
+        }
     }
 
 
