@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP (solo usado para Formularios)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- CSS propio -->
     <link rel="stylesheet" href="styles/styles.css">
     <title>K-forms</title>
 </head>
@@ -295,8 +298,63 @@
 
         <section id="habilitacion"> 
 
-            <h3 class="justificadoIzq">Habilitación en <span class="enColorCeleste">3 pasos</span></h3>
+            <h3>Habilitación en <span class="enColorCeleste">3 pasos</span></h3>
 
+            <!-- Paso 1 -->
+            <div class="divisionPasos">
+                <div class="textoPasos">
+                    <h3 class="enColorCeleste">1. Envíanos los documentos que necesitas digitalizar</h3>
+
+                    <form> <!-- Completar formulario -->
+                        <input type="email" class="form-control" value="Correo Electrónico" id="inputEmail" aria-describedby="emailHelp">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Cantidad de usuarios</option>
+                            <option value="1">Uno</option>
+                            <option value="2">Dos</option>
+                            <option value="3">Tres</option>
+                            <option value="3+">Más de tres</option>
+                        </select>
+                        <input type="file" class="form-control" id="inputGroupFile02"> 
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+
+                <div class="imgPasos">
+                    <div class="imgPaso"></div> <!-- Cambiar este div por img mockup -->
+                    <div class="circuloFondoPasos"></div>
+                </div>
+            </div>
+
+            <!-- Paso 2 -->
+            <div class="divisionPasos">
+                <div class="textoPasos">
+                    <h3 class="enColorCeleste">2. Accede a la aplicación con el usuario y contraseña que te enviaremos por correo</h3>
+                    <p>Prueba el formulario que hemos creado, y olvídate  de los papeles</p>
+                    
+                    <div class="iconosDownload">
+                        <img src="./images/app-store.svg" alt="Descagar en AppStore">
+                        <img src="./images/google-play.svg" alt="Descargar en Google Play">
+                    </div>
+                </div>
+
+                <div class="imgPasos">
+                    <div class="imgPaso"></div> <!-- Cambiar este div por img mockup -->
+                    <div class="circuloFondoPasos"></div>
+                </div>
+            </div>
+
+            <!-- Paso 3 -->
+            <div class="divisionPasos">
+                <div class="textoPasos">
+                    <h3 id="paso3" class="enColorCeleste">3. Emmm no tenemos un paso 3</h3>
+                </div>
+
+                <div class="imgPasos">
+                    <div class="imgPaso"></div> <!-- Cambiar este div por img mockup -->
+                    <div class="circuloFondoPasos"></div>
+                </div>
+            </div>
+            
         </section>
 
 

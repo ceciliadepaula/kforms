@@ -1,0 +1,81 @@
+#habilitacion{
+    margin-top: 80px;
+    h3{
+        text-align: left;
+        margin: 40px 5% 20px 5%;
+        max-width: 100%;
+    }
+    .divisionPasos{
+        display: grid;
+        grid-template-columns: 1fr;
+        .textoPasos{
+            margin: 30px 0; 
+            h3{
+                margin-bottom: 34px;
+                margin-top: 0;
+                text-align: left;
+            }
+            p{
+                margin: 0 5% 30px 5%;
+                /* font-size: 26px; */
+                font-size: 22px;
+            }
+            #paso3{
+                margin-bottom: 0;
+            }
+            .iconosDownload{
+                margin: 0 5%;
+                width: 90%;
+                img{
+                    height: 50px;
+                    /* max-height: 67px; */
+                    padding: 0 10px 0 0;
+                }
+            }
+            form{
+                margin: 0 5%;
+                .form-control, .form-select{
+                    border: 2px solid $azul;
+                    margin-bottom: 20px;
+                }
+                .btn{
+                    background-color: $azul;
+                    border: none;
+                    height: 48px;
+                    width: 140px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .imgPasos{
+            margin: 30px 0; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .imgPaso{
+                width: 293.89px;
+                height: 606px;
+                box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+                border-radius: 48px;
+                background-color: red;
+                align-self: center;
+
+            }
+            .circuloFondoPasos{
+                align-self: center;
+                width: 100vw;
+                height: 100vw;
+                max-width: 672px;
+                max-height: 672px;
+                background: $gris;
+                border-radius: 50%;
+                position: relative;
+                /* bottom: 550px;
+                margin-bottom: -700px; */
+                bottom: 550px;
+                margin-bottom: -400px;
+                z-index: -10;
+            }
+        }
+    }
+}
