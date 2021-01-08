@@ -1,0 +1,29 @@
+#herramientasKForms{
+    width: 90%;
+    margin: auto 5%; 
+    ul{
+        margin: 47px auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        .elementosLista{
+            width: 270px;
+            height: 206px;
+            box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.1);
+            border-radius: 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 17px auto;
+            .contenedorImg{
+                display: flex;
+                justify-content: center;
+            }
+            .descripcionTxtLista{
+                margin-top: 23px;
+                p.textoDescrLista{
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}

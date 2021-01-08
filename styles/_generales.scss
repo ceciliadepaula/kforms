@@ -28,3 +28,48 @@ body{
     max-width: 1449px;
     margin: auto;
 }
+
+h3, h4{
+    font-weight: $medium;
+    text-align: center;
+    max-width: 790px;
+    margin: auto;
+}
+h4{
+    font-size: 18px;
+    line-height: 27px;
+    padding-top: 70px;
+}
+h3{
+    font-size: 34px;        
+    line-height: 51px;
+}
+
+.descripcionTxtLista{
+    align-self: center;
+    text-align: center;
+    width: 95%;
+    margin-top: 26px;
+    h3.tituloDescrLista{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    p.textoDescrLista{
+        margin: 22px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+.enColorCeleste{
+    color: $azul;
+}
+
+.elementosLista, .flecha{
+    list-style: none;
+}
+
+.justificadoIzq{
+    text-align: left;
+    margin-left: 5%;
+}

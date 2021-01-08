@@ -7,27 +7,11 @@
     max-width: 1278px;
     margin-top: -50px;
     margin-bottom: 90px;
-    h3, h4{
-        font-weight: $medium;
-        text-align: center;
-    }
-    h4{
-        font-size: 18px;
-        line-height: 27px;
-        padding-top: 70px;
-    }
-    h3{
-        font-size: 34px;        
-        line-height: 51px;
-    }
     ul{
         padding-top: 50px;
         padding-bottom: 50px;
         display: grid;
         grid-template-rows: 3fr 1fr 3fr 1fr 3fr 1fr 3fr; 
-        .elementosLista, .flecha{
-            list-style: none;
-        }
         .elementosLista{
             display: flex;
             flex-direction: column;
@@ -39,21 +23,6 @@
                 display: flex;
                 justify-content: center;
                 align-self: center;
-            }
-            .descripcionTxtLista{
-                align-self: center;
-                text-align: center;
-                width: 95%;
-                margin-top: 26px;
-                h3.tituloDescrLista{
-                    font-size: 20px;
-                    line-height: 25px;
-                }
-                p.textoDescrLista{
-                    margin: 22px;
-                    font-size: 14px;
-                    line-height: 17px;
-                }
             }
         }
 
