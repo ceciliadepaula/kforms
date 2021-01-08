@@ -7,6 +7,8 @@
     max-width: 1278px;
     margin-top: -50px;
     margin-bottom: 90px;
+    position:relative; 
+    z-index: 3;
     ul{
         padding-top: 50px;
         padding-bottom: 50px;
@@ -25,7 +27,6 @@
                 align-self: center;
             }
         }
-
         .flecha{
             justify-self: center;
             align-self: center;
