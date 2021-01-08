@@ -3,7 +3,6 @@
 $blanco:  #FFFFFF;
 $gris: #EBF0F5;
 $azul: #07617D;
-/* $azulOscuro: #07617D; */
 $celeste: #15A0B7;
 
 /* Pesos tipográficos */
@@ -76,4 +75,33 @@ h3{
 
 ul{
     padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.iconosDownload{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    a{
+        img{
+            height: 50px;
+            padding: 0 10px;
+        }
+    }
+    
+}
+
+.btn{
+    background-color: $azul;
+    border: none;
+    height: 48px;
+    width: 140px;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    background-color: $azul;
 }

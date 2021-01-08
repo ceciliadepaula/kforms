@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /* Colores */
-/* $azulOscuro: #07617D; */
 /* Pesos tipográficos */
 /* Generales */
 * {
@@ -70,6 +69,40 @@ h3 {
 
 ul {
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.iconosDownload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.iconosDownload a img {
+  height: 50px;
+  padding: 0 10px;
+}
+
+.btn {
+  background-color: #07617D;
+  border: none;
+  height: 48px;
+  width: 140px;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #07617D;
 }
 
 /* Desktop */
@@ -167,24 +200,6 @@ header #contBotonIngresar #botonIngresar p {
 
 #presentacionApp #textosPresentacion h1#tituloPresentacion #resaltadoCeleste {
   background-color: #15A0B7;
-}
-
-#presentacionApp #textosPresentacion .iconosDownload {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#presentacionApp #textosPresentacion .iconosDownload img {
-  height: 50px;
-  padding: 0 10px;
 }
 
 #presentacionApp #imgCelPresentacion {
@@ -365,7 +380,6 @@ header #contBotonIngresar #botonIngresar p {
 
 #habilitacion .divisionPasos .textoPasos p {
   margin: 0 5% 30px 5%;
-  /* font-size: 26px; */
   font-size: 22px;
 }
 
@@ -376,11 +390,12 @@ header #contBotonIngresar #botonIngresar p {
 #habilitacion .divisionPasos .textoPasos .iconosDownload {
   margin: 0 5%;
   width: 90%;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
-#habilitacion .divisionPasos .textoPasos .iconosDownload img {
-  height: 50px;
-  /* max-height: 67px; */
+#habilitacion .divisionPasos .textoPasos .iconosDownload a img {
   padding: 0 10px 0 0;
 }
 
@@ -391,14 +406,6 @@ header #contBotonIngresar #botonIngresar p {
 #habilitacion .divisionPasos .textoPasos form .form-control, #habilitacion .divisionPasos .textoPasos form .form-select {
   border: 2px solid #07617D;
   margin-bottom: 20px;
-}
-
-#habilitacion .divisionPasos .textoPasos form .btn {
-  background-color: #07617D;
-  border: none;
-  height: 48px;
-  width: 140px;
-  text-transform: uppercase;
 }
 
 #habilitacion .divisionPasos .imgPasos {
@@ -438,11 +445,179 @@ header #contBotonIngresar #botonIngresar p {
   background: #EBF0F5;
   border-radius: 50%;
   position: relative;
-  /* bottom: 550px;
-                margin-bottom: -700px; */
   bottom: 550px;
   margin-bottom: -400px;
   z-index: -10;
+}
+
+#empresas {
+  margin: 20px 5% 100px 5%;
+}
+
+#empresas h3 {
+  margin: 50px auto 20px auto;
+  width: 80%;
+}
+
+#empresas #iconosEmpresas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+#empresas #iconosEmpresas img {
+  margin: 30px auto;
+}
+
+#demo {
+  background-color: #07617D;
+  border-radius: 60px 60px 0 0;
+  color: #FFFFFF;
+  padding-top: 70px;
+}
+
+#demo div h3 {
+  padding-bottom: 33px;
+}
+
+#demo div p {
+  width: 90%;
+  margin: 0px auto 50px auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+#demo div .iconosDownload {
+  margin-bottom: 50px;
+}
+
+#demo #imgCelDemo div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#demo #imgCelDemo div .imgDemo {
+  width: 166px;
+  height: 292px;
+  background-color: red;
+  border-radius: 18px;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#demo #imgCelDemo div #demo2 {
+  margin-top: 150px;
+}
+
+#demo #imgCelDemo #circuloFondoDemo {
+  background-color: #07617D;
+  mix-blend-mode: multiply;
+  width: 100vw;
+  height: 100vw;
+  max-width: 600px;
+  max-height: 600px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 380px;
+  margin: auto;
+  margin-bottom: -280px;
+}
+
+#demo #imgCelDemo #circuloPequeñoDemo {
+  display: none;
+}
+
+#demo #textoDemo {
+  padding-bottom: 100px;
+}
+
+#demo #textoDemo form {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#demo #textoDemo form .form-control {
+  background-color: #07617D;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  margin-right: 20px;
+}
+
+#demo #textoDemo form .btn {
+  color: #07617D;
+  background-color: #FFFFFF;
+}
+
+#contacto {
+  background-color: #EBF0F5;
+  padding: 100px 5% 0 5%;
+}
+
+#contacto h3 {
+  padding-bottom: 77px;
+}
+
+#contacto form {
+  padding-bottom: 20px;
+}
+
+#contacto form .form-control {
+  margin-bottom: 20px;
+  color: #07617D;
+  border: 2px solid #07617D;
+  border-radius: 10px;
+  height: 48px;
+  background-color: #EBF0F5;
+}
+
+#contacto form #txtAdicional {
+  height: 120px;
+}
+
+#contacto form .btn {
+  float: right;
+}
+
+footer {
+  padding: 75px 0 63px 0;
+  background-color: #EBF0F5;
+}
+
+footer .lineaDivision {
+  width: 80%;
+  border: 1px solid #C4C4C4;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer .txtFooter {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
 }
 
 /* 768px */
@@ -471,6 +646,9 @@ header #contBotonIngresar #botonIngresar p {
 
 /* 1024px */
 @media screen and (min-width: 1024px) {
+  h3 {
+    font-size: 40px;
+  }
   header {
     padding: 0 5%;
   }
@@ -500,7 +678,7 @@ header #contBotonIngresar #botonIngresar p {
         -ms-flex-pack: left;
             justify-content: left;
   }
-  main #presentacionApp #textosPresentacion .iconosDownload img {
+  main #presentacionApp #textosPresentacion .iconosDownload a img {
     height: 67px;
     padding: 0 20px 0 0;
   }
@@ -536,6 +714,152 @@ header #contBotonIngresar #botonIngresar p {
   main #herramientasKForms ul {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  main #habilitacion h3 {
+    margin: 40px 7% 60px 7%;
+  }
+  main #habilitacion .divisionPasos {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  main #habilitacion .divisionPasos .invertirLugar {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  main #habilitacion .divisionPasos .textoPasos {
+    margin: 30px auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    max-width: 466px;
+  }
+  main #habilitacion .divisionPasos .textoPasos h3, main #habilitacion .divisionPasos .textoPasos p, main #habilitacion .divisionPasos .textoPasos .iconosDownload, main #habilitacion .divisionPasos .textoPasos form {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  main #habilitacion .divisionPasos .textoPasos p {
+    font-size: 26px;
+  }
+  main #habilitacion .divisionPasos .textoPasos .iconosDownload {
+    width: 100%;
+    margin-top: 40px;
+  }
+  main #habilitacion .divisionPasos .textoPasos .iconosDownload a img {
+    height: 67px;
+  }
+  main #habilitacion .divisionPasos .imgPasos .circuloFondoPasos {
+    bottom: 550px;
+    margin-bottom: -600px;
+  }
+  main #empresas {
+    margin-top: 120px;
+  }
+  main #empresas #iconosEmpresas {
+    width: 70%;
+    margin: auto;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  main #demo {
+    border-radius: 128px 128px 0 0;
+    padding-top: 95px;
+  }
+  main #demo div h3 {
+    max-width: 760px;
+  }
+  main #demo div p {
+    max-width: 760px;
+    font-size: 24px;
+  }
+  main #demo div .iconosDownload a img {
+    height: 67px;
+  }
+  main #demo #grillaDemo {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  main #demo #grillaDemo #imgCelDemo div .imgDemo {
+    width: 252px;
+    height: 443px;
+    margin-top: 0;
+  }
+  main #demo #grillaDemo #imgCelDemo div #demo1 {
+    margin-bottom: 150px;
+  }
+  main #demo #grillaDemo #imgCelDemo div #demo2 {
+    margin-top: 250px;
+  }
+  main #demo #grillaDemo #imgCelDemo #circuloFondoDemo {
+    bottom: 600px;
+    margin-bottom: -350px;
+  }
+  main #demo #grillaDemo #imgCelDemo #circuloPequeñoDemo {
+    display: inherit;
+    width: 109px;
+    height: 109px;
+    border-radius: 50%;
+    background-color: #07617D;
+    mix-blend-mode: multiply;
+    position: relative;
+    bottom: 350px;
+    margin-bottom: -350px;
+    left: 100%;
+  }
+  main #demo #grillaDemo #textoDemo {
+    margin: auto;
+    max-width: 470px;
+    padding-bottom: 0;
+  }
+  main #demo #grillaDemo #textoDemo p {
+    text-align: left;
+  }
+  main #contacto form {
+    max-width: 800px;
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+    grid-column-gap: 20px;
+        grid-template-areas: "a b" "c d" "e e" "f f";
+  }
+  main #contacto form #txtAdicional {
+    width: 800px;
+  }
+  main #contacto form .a {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: a;
+  }
+  main #contacto form .b {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: b;
+  }
+  main #contacto form .c {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: c;
+  }
+  main #contacto form .d {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: d;
+  }
+  main #contacto form .e {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: e;
+  }
+  main #contacto form .f {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: f;
+    -ms-grid-column-align: end;
+        justify-self: end;
   }
 }
 

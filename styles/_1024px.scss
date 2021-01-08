@@ -1,6 +1,10 @@
 /* 1024px */
 
 @media screen and (min-width: 1024px){
+    h3{
+        font-size: 40px;
+    }
+
     header{
         padding: 0 5%;
     }
@@ -21,10 +25,13 @@
                 }
                 .iconosDownload{
                     justify-content: left;
-                    img{
-                        height: 67px;
-                        padding: 0 20px 0 0;
+                    a{
+                        img{
+                            height: 67px;
+                            padding: 0 20px 0 0;
+                        }
                     }
+                    
                 }
             }
             #imgCelPresentacion{
@@ -62,6 +69,160 @@
             ul{
                 grid-template-columns: 1fr 1fr 1fr 1fr;
             }
+        }
+
+        #habilitacion{
+            h3{
+                margin: 40px 7% 60px 7%;
+            }
+            .divisionPasos{
+                grid-template-columns: 1fr 1fr;
+                .invertirLugar{
+                    order: -1;
+                }
+                .textoPasos{
+                    margin: 30px auto; 
+                    align-self: center;
+                    max-width: 466px;
+                    h3, p, .iconosDownload, form{
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                    p{
+                        font-size: 26px;
+                    }
+                    .iconosDownload{
+                        width: 100%;
+                        margin-top: 40px;
+                        a{
+                            img{
+                                height: 67px;
+                            }
+                        }
+                        
+                    }
+                }
+                .imgPasos{
+                    .circuloFondoPasos{
+                        bottom: 550px;
+                        margin-bottom: -600px;
+                    }
+                }
+            }
+        }
+
+        #empresas{
+            margin-top: 120px;
+            #iconosEmpresas{
+                width: 70%;
+                margin: auto;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        #demo{
+            border-radius: 128px 128px 0 0;
+            padding-top: 95px;
+            div{
+                h3{
+                    max-width: 760px;
+                }
+                p{
+                    max-width: 760px;
+                    font-size: 24px;
+                }
+                .iconosDownload{
+                    a{
+                        img{
+                            height: 67px;
+                        }
+                    }
+                }
+            }
+            #grillaDemo{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                
+                #imgCelDemo{
+                     div{
+                        .imgDemo{
+                            width: 252px;
+                            height: 443px;
+                            margin-top: 0;
+                        }
+                        #demo1{
+                            margin-bottom: 150px;
+                        }
+                        #demo2{
+                            margin-top: 250px;
+                        }
+                    }
+                    #circuloFondoDemo{
+                        bottom: 600px;
+                        margin-bottom: -350px
+                    }
+                    #circuloPequeñoDemo{
+                        display: inherit;
+                        width: 109px;
+                        height: 109px;
+                        border-radius: 50%;
+                        background-color: $azul;
+                        mix-blend-mode: multiply;
+                        position: relative;
+                        bottom: 350px;
+                        margin-bottom: -350px;
+                        left: 100%;
+                        
+                    }
+                }
+                #textoDemo{
+                    margin: auto;
+                    max-width: 470px;
+                    padding-bottom: 0;
+                    p{
+                        text-align: left;
+                    }
+                    
+                }
+            }
+            
+        }
+
+        #contacto{            
+            form{
+                max-width: 800px;
+                margin: auto;
+                display: grid;
+                grid-column-gap: 20px;
+                #txtAdicional{
+                    width: 800px;
+                }
+                .a{
+                    grid-area: a;
+                }
+                .b{
+                    grid-area: b;
+                }
+                .c{
+                    grid-area: c;
+                }
+                .d{
+                    grid-area: d;
+                }
+                .e{
+                    grid-area: e;
+                }
+                .f{
+                    grid-area: f;
+                    justify-self: end;
+                }
+                grid-template-areas: 
+                    "a b"
+                    "c d"
+                    "e e"
+                    "f f";
+            }
+
         }
     }
 

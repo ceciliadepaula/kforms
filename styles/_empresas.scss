@@ -1,0 +1,14 @@
+#empresas{
+    margin: 20px 5% 100px 5%;
+    h3{
+        margin: 50px auto 20px auto;
+        width: 80%;
+    }
+    #iconosEmpresas{
+        display: grid;
+        grid-template-columns: 1fr;
+        img{
+            margin: 30px auto;
+        }
+    }
+}

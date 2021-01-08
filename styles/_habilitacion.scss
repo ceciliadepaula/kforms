@@ -17,7 +17,6 @@
             }
             p{
                 margin: 0 5% 30px 5%;
-                /* font-size: 26px; */
                 font-size: 22px;
             }
             #paso3{
@@ -26,24 +25,19 @@
             .iconosDownload{
                 margin: 0 5%;
                 width: 90%;
-                img{
-                    height: 50px;
-                    /* max-height: 67px; */
-                    padding: 0 10px 0 0;
+                justify-content: left;
+                a{
+                    img{
+                        padding: 0 10px 0 0;
+                    }
                 }
+                
             }
             form{
                 margin: 0 5%;
                 .form-control, .form-select{
                     border: 2px solid $azul;
                     margin-bottom: 20px;
-                }
-                .btn{
-                    background-color: $azul;
-                    border: none;
-                    height: 48px;
-                    width: 140px;
-                    text-transform: uppercase;
                 }
             }
         }
@@ -59,7 +53,6 @@
                 border-radius: 48px;
                 background-color: red;
                 align-self: center;
-
             }
             .circuloFondoPasos{
                 align-self: center;
@@ -70,8 +63,6 @@
                 background: $gris;
                 border-radius: 50%;
                 position: relative;
-                /* bottom: 550px;
-                margin-bottom: -700px; */
                 bottom: 550px;
                 margin-bottom: -400px;
                 z-index: -10;

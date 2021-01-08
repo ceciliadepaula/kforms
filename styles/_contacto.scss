@@ -1,0 +1,24 @@
+#contacto{
+    background-color: $gris;
+    padding: 100px 5% 0 5%;
+    h3{
+        padding-bottom: 77px;
+    }
+    form{
+        padding-bottom: 20px;
+        .form-control{
+            margin-bottom: 20px;
+            color: $azul;
+            border: 2px solid $azul;
+            border-radius: 10px;
+            height: 48px;
+            background-color: $gris;
+        }
+        #txtAdicional{
+            height: 120px;
+        }
+        .btn{
+            float: right;
+        }
+    }
+}
