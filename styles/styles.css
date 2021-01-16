@@ -12,7 +12,6 @@
 
 body {
   font-family: 'Rubik', sans-serif;
-  max-width: 1449px;
   margin: auto;
 }
 
@@ -107,7 +106,7 @@ a {
 
 header {
   width: 100%;
-  max-width: 1449px;
+  /* max-width: 1449px; */
   height: 100px;
   background-color: #FFFFFF;
   position: fixed;
@@ -217,12 +216,7 @@ header #contBotonIngresar #botonIngresar p {
 }
 
 #presentacionApp #imgCelPresentacion #imgCelular {
-  width: 293.89px;
   height: 606px;
-  background-color: red;
-  border-radius: 48px;
-  -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
   z-index: 10;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -262,8 +256,9 @@ header #contBotonIngresar #botonIngresar p {
   padding-bottom: 50px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 3fr 1fr 3fr 1fr 3fr 1fr 3fr;
-      grid-template-rows: 3fr 1fr 3fr 1fr 3fr 1fr 3fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-row-gap: 20px;
 }
 
 #loQueOfrecemos ul .elementosLista {
@@ -297,6 +292,7 @@ header #contBotonIngresar #botonIngresar p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  display: none;
 }
 
 #loQueOfrecemos ul .flecha img {
@@ -378,6 +374,8 @@ header #contBotonIngresar #botonIngresar p {
   margin-bottom: 34px;
   margin-top: 0;
   text-align: left;
+  font-size: 28px;
+  line-height: 38px;
 }
 
 #habilitacion .divisionPasos .textoPasos p {
@@ -406,31 +404,17 @@ header #contBotonIngresar #botonIngresar p {
 }
 
 #habilitacion .divisionPasos .textoPasos form .form-control, #habilitacion .divisionPasos .textoPasos form .form-select {
-  border: 2px solid #07617D;
+  border: 1.5px solid #07617D;
   margin-bottom: 20px;
 }
 
 #habilitacion .divisionPasos .imgPasos {
   margin: 30px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: none;
 }
 
 #habilitacion .divisionPasos .imgPasos .imgPaso {
-  width: 293.89px;
   height: 606px;
-  -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
-  border-radius: 48px;
-  background-color: red;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -508,12 +492,7 @@ header #contBotonIngresar #botonIngresar p {
 }
 
 #demo #imgCelDemo div .imgDemo {
-  width: 166px;
-  height: 292px;
-  background-color: red;
-  border-radius: 18px;
-  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  height: 606px;
   z-index: 10;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -522,6 +501,7 @@ header #contBotonIngresar #botonIngresar p {
 
 #demo #imgCelDemo div #demo2 {
   margin-top: 150px;
+  display: none;
 }
 
 #demo #imgCelDemo #circuloFondoDemo {
@@ -533,7 +513,7 @@ header #contBotonIngresar #botonIngresar p {
   max-height: 600px;
   border-radius: 50%;
   position: relative;
-  bottom: 380px;
+  bottom: 480px;
   margin: auto;
   margin-bottom: -280px;
 }
@@ -561,7 +541,7 @@ header #contBotonIngresar #botonIngresar p {
 #demo #textoDemo form .form-control {
   background-color: #07617D;
   color: #FFFFFF;
-  border: 2px solid #FFFFFF;
+  border: 1.5px solid #FFFFFF;
   margin-right: 20px;
 }
 
@@ -586,7 +566,7 @@ header #contBotonIngresar #botonIngresar p {
 #contacto form .form-control {
   margin-bottom: 20px;
   color: #07617D;
-  border: 2px solid #07617D;
+  border: 1.5px solid #07617D;
   border-radius: 10px;
   height: 48px;
   background-color: #EBF0F5;
@@ -624,12 +604,6 @@ footer .txtFooter {
 
 /* 768px */
 @media screen and (min-width: 768px) {
-  #loQueOfrecemos ul {
-    -ms-grid-rows: 3fr;
-        grid-template-rows: 3fr;
-    -ms-grid-columns: 3fr 1fr 3fr;
-        grid-template-columns: 3fr 1fr 3fr;
-  }
   #loQueOfrecemos ul .elementosLista {
     height: 300px;
   }
@@ -660,6 +634,10 @@ footer .txtFooter {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
   main #presentacionApp #textosPresentacion {
     -ms-flex-item-align: center;
@@ -706,6 +684,9 @@ footer .txtFooter {
   main #loQueOfrecemos ul .elementosLista {
     height: 350px;
   }
+  main #loQueOfrecemos ul .flecha {
+    display: inherit;
+  }
   main #loQueOfrecemos ul .flecha img {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -714,6 +695,7 @@ footer .txtFooter {
     display: inherit;
   }
   main #herramientasKForms ul {
+    max-width: 1278px;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
   }
@@ -740,6 +722,10 @@ footer .txtFooter {
     margin-left: 0;
     margin-right: 0;
   }
+  main #habilitacion .divisionPasos .textoPasos h3 {
+    font-size: 40px;
+    line-height: 51px;
+  }
   main #habilitacion .divisionPasos .textoPasos p {
     font-size: 26px;
   }
@@ -749,6 +735,19 @@ footer .txtFooter {
   }
   main #habilitacion .divisionPasos .textoPasos .iconosDownload a img {
     height: 67px;
+  }
+  main #habilitacion .divisionPasos .imgPasos {
+    display: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   main #habilitacion .divisionPasos .imgPasos .circuloFondoPasos {
     bottom: 550px;
@@ -783,16 +782,19 @@ footer .txtFooter {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     padding-bottom: 100px;
+    margin-right: 10%;
+    margin-left: 10%;
   }
   main #demo #grillaDemo #imgCelDemo div .imgDemo {
     width: 252px;
-    height: 443px;
+    height: auto;
     margin-top: 0;
   }
   main #demo #grillaDemo #imgCelDemo div #demo1 {
     margin-bottom: 150px;
   }
   main #demo #grillaDemo #imgCelDemo div #demo2 {
+    display: inherit;
     margin-top: 250px;
   }
   main #demo #grillaDemo #imgCelDemo #circuloFondoDemo {
@@ -875,8 +877,23 @@ footer .txtFooter {
     padding-left: 10%;
     padding-right: 10%;
   }
+  main #presentacionApp #imgCelPresentacion {
+    margin-left: 0px;
+  }
   main #loQueOfrecemos ul .elementosLista {
     height: 310px;
+  }
+  main #habilitacion h3 {
+    margin: 40px 10% 60px 10%;
+  }
+  main #habilitacion .divisionPasos {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  main #herramientasKForms {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

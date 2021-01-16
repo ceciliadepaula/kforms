@@ -23,16 +23,13 @@
             flex-direction: row;
             justify-content: space-evenly;
             .imgDemo{
-                width: 166px;
-                height: 292px;
-                background-color: red;
-                border-radius: 18px;
-                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+                height: 606px;
                 z-index: 10;
                 align-self: center;
             }
             #demo2{
                 margin-top: 150px;
+                display: none;
             }
         }
         #circuloFondoDemo{
@@ -44,7 +41,7 @@
             max-height: 600px;
             border-radius: 50%;
             position: relative;
-            bottom: 380px;
+            bottom: 480px;
             margin: auto;
             margin-bottom: -280px;
         }
@@ -62,7 +59,7 @@
             .form-control{
                 background-color: $azul;
                 color: $blanco;
-                border: 2px solid $blanco;
+                border: 1.5px solid $blanco;
                 margin-right: 20px;
             }
             .btn{

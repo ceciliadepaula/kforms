@@ -8,6 +8,9 @@
         #presentacionApp{
             padding-left: 10%;
             padding-right: 10%;
+            #imgCelPresentacion{
+                margin-left: 0px;
+            }
         }
         #loQueOfrecemos{
             ul{
@@ -15,6 +18,20 @@
                     height: 310px;
                 }
             }
+        }
+        #habilitacion{
+            h3{
+                margin: 40px 10% 60px 10%;
+            }
+            .divisionPasos{
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+        }
+        #herramientasKForms{
+            margin-left: 10%;
+            margin-right: 10%;
+            width: 80%;
         }
     }
 }

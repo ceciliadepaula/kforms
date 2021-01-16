@@ -3,8 +3,6 @@
 @media screen and (min-width: 768px){
     #loQueOfrecemos{
         ul{
-            grid-template-rows: 3fr; 
-            grid-template-columns: 3fr 1fr 3fr;
             .elementosLista{
                 height: 300px;
             }

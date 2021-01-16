@@ -11,6 +11,8 @@
         #presentacionApp{
             border-radius: 0px 0px 128px 128px;
             flex-direction: row;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             #textosPresentacion{
                 align-self: center;
                 h1#tituloPresentacion{
@@ -52,6 +54,7 @@
                     height: 350px;
                 }
                 .flecha{
+                    display: inherit;
                     img{
                         transform: rotate(0deg);
                     }
@@ -63,6 +66,7 @@
         }
         #herramientasKForms{
             ul{
+                max-width: 1278px;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
             }
         }
@@ -83,6 +87,10 @@
                         margin-left: 0;
                         margin-right: 0;
                     }
+                    h3{
+                        font-size: 40px;
+                        line-height: 51px;
+                    }
                     p{
                         font-size: 26px;
                     }
@@ -97,6 +105,10 @@
                     }
                 }
                 .imgPasos{
+                    display: inherit;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
                     .circuloFondoPasos{
                         bottom: 550px;
                         margin-bottom: -600px;
@@ -137,17 +149,20 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 padding-bottom: 100px;
+                margin-right: 10%;
+                margin-left: 10%;
                 #imgCelDemo{
                      div{
                         .imgDemo{
                             width: 252px;
-                            height: 443px;
+                            height: auto;
                             margin-top: 0;
                         }
                         #demo1{
                             margin-bottom: 150px;
                         }
                         #demo2{
+                            display: inherit;
                             margin-top: 250px;
                         }
                     }
