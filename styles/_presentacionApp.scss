@@ -25,11 +25,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        #imgCelular{
-            height: 606px;
-            z-index: 10;
-            align-self: center;
-        }
         #circuloFondoPpal{
             background-color: $azul;
             mix-blend-mode: multiply;
@@ -42,4 +37,32 @@
             margin-bottom: -700px;
         }
     }
+}
+
+/* Carrusel Bootstrap */
+
+.mockup_cel{
+    width: 294px;
+    height: 606px;
+    background-image: url("/images/iphone.png");
+    background-size: 294px 606px;
+    position: relative;
+    z-index: 10;
+}
+
+.captura{
+    width: 256px;
+    height: 456px;
+}
+
+#carouselExampleSlidesOnly{
+    margin: auto;
+}
+
+#contenedor{
+    width: 256px;
+    height: 456px;
+    position: relative;
+    left: 19px;
+    top: 80px;
 }
