@@ -229,10 +229,11 @@ header #contBotonIngresar #botonIngresar p {
   margin-bottom: -700px;
 }
 
+/* Carrusel Bootstrap */
 .mockup_cel {
   width: 294px;
   height: 606px;
-  background-image: url("/images/iphone.png");
+  background-image: url("../images/iphone.png");
   background-size: 294px 606px;
   position: relative;
   z-index: 10;
