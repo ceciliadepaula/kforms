@@ -11,26 +11,3 @@ function scrollCotizar() {
     }
 }
 
-
-// Ventana de confirmación al hacer click en enviar en formulario Habilitación
-
-/* document.getElementById("enviarHabilitac").addEventListener("click", clickEnviar);
-
-let inputEmail = document.getElementById("inputEmail").value
-let cantUsuarios = document.getElementById("cantUsuarios").value
-let archivo = document.getElementById("inputGroupFile02").value
-
-
-function clickEnviar(){
-    if (inputEmail != "" && cantUsuarios != "Cantidad de usuarios" && archivo != ""){
-        console.log("salta ventana");
-
-        document.getElementById("contToast").innerHTML = `
-       
-        `;
-
-    } else {
-        console.log("no salta ventana");        
-    }
-}
- */
