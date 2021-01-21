@@ -21,9 +21,9 @@
                 margin: 0 5% 30px 5%;
                 font-size: 22px;
             }
-            #paso3{
+            /* #paso3{
                 margin-bottom: 0;
-            }
+            } */
             .iconosDownload{
                 margin: 0 5%;
                 width: 90%;
@@ -64,4 +64,26 @@
             }
         }
     }
+}
+
+
+#contToast{
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#toast1{
+    position: relative;
+    top: 200px;
+    z-index: 10;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    padding: 50px 5px;
 }

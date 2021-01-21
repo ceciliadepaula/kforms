@@ -6,6 +6,11 @@
     }
     header{
         padding: 0 5%;
+        #contBotonIngresar{          
+            #botonLlamanos{
+                display: inherit;               
+            }
+        }
     }
     main{
         #presentacionApp{
@@ -229,5 +234,9 @@
                     "f f";
             }
         }
+    }
+
+    #toast1{
+        top: 350px;
     }
 }

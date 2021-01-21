@@ -1,6 +1,5 @@
 header{
     width: 100%;
-    /* max-width: 1449px; */
     height: 100px;
     background-color: $blanco;
     position: fixed;
@@ -19,9 +18,11 @@ header{
     }
     #contBotonIngresar{
         width: 50%;
+        
         display: flex;
         justify-content: flex-end;
-            #botonIngresar{
+        #botonIngresar{
+            margin-left: 10px;
             height: 40px;
             width: 140px;
             display: flex;
@@ -29,12 +30,37 @@ header{
             align-items: center;
             justify-content: center;
             background: $azul;
-            border-radius: 12px;
+            border-radius: 6px;
             p{
                 margin: 0;
                 color: $blanco;
                 text-transform: uppercase;
             }
+        }
+        #botonLlamanos{
+            height: 40px;
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            border: $azul solid 1.5px;
+            color: $azul;
+            padding: 0 10px;
+            display: none;
+            #p_numLlamanos{
+                margin-bottom: 0;
+                padding: 0 10px;
+                
+                span{
+                    font-weight: $bold;
+                }
+                #iconLlamanos{
+                    padding-right: 10px;
+                }
+            }
+            
         }
     }
 }
