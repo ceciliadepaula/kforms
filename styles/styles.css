@@ -268,30 +268,44 @@ header #contBotonIngresar #botonLlamanos #p_numLlamanos #iconLlamanos {
 }
 
 /* Carrusel Bootstrap */
-.mockup_cel {
-  width: 294px;
-  height: 606px;
-  background-image: url("../images/iphone.png");
-  background-size: 294px 606px;
+#imgCelPresentacion #iphone-carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 10;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#imgCelPresentacion #iphone-carousel div#iphone {
   position: relative;
   z-index: 10;
 }
 
-.captura {
-  width: 256px;
-  height: 456px;
+#imgCelPresentacion #iphone-carousel div#iphone img {
+  width: 294px;
+  height: 606px;
 }
 
-#carouselExampleSlidesOnly {
-  margin: auto;
+#imgCelPresentacion #iphone-carousel div.mockup_cel {
+  position: relative;
+  top: 0;
+  right: 294px;
+  width: 0;
+}
+
+.captura {
+  width: 258px;
+  border-radius: 5px;
 }
 
 #contenedor {
-  width: 256px;
-  height: 456px;
+  width: 258px;
   position: relative;
   left: 19px;
-  top: 80px;
+  top: 19px;
 }
 
 #loQueOfrecemos {
@@ -470,11 +484,44 @@ header #contBotonIngresar #botonLlamanos #p_numLlamanos #iconLlamanos {
   display: none;
 }
 
-#habilitacion .divisionPasos .imgPasos .imgPaso {
-  height: 606px;
+#habilitacion .divisionPasos .imgPasos div.mockupPasos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 10;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#habilitacion .divisionPasos .imgPasos div.mockupPasos .imgPaso {
+  position: relative;
+  top: px;
+  left: 0;
+  width: 0;
+}
+
+#habilitacion .divisionPasos .imgPasos div.mockupPasos .imgPaso img {
+  border-radius: 10px;
+  width: 258px;
+  height: 570px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  position: relative;
+  left: 19px;
+  top: 18px;
+}
+
+#habilitacion .divisionPasos .imgPasos div.mockupPasos .imgCel {
+  position: relative;
+  z-index: 10;
+}
+
+#habilitacion .divisionPasos .imgPasos div.mockupPasos .imgCel img {
+  width: 294px;
+  height: 606px;
 }
 
 #habilitacion .divisionPasos .imgPasos .circuloFondoPasos {

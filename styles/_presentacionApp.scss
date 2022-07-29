@@ -42,29 +42,37 @@
 }
 
 /* Carrusel Bootstrap */
-
-.mockup_cel{
-    width: 294px;
-    height: 606px;
-    background-image: url("../images/iphone.png");
-    background-size: 294px 606px;
-    position: relative;
-    z-index: 10;
+#imgCelPresentacion{
+    #iphone-carousel{
+        display: flex;
+        position: relative;
+        z-index: 10;
+        justify-content: center;
+        div#iphone{
+            position: relative;
+            z-index: 10;
+            img{
+                width: 294px;
+                height: 606px;
+            }
+        }
+        div.mockup_cel{
+            position: relative;
+            top: 0;
+            right: 294px;
+            width: 0;
+        }
+    }
 }
 
 .captura{
-    width: 256px;
-    height: 456px;
-}
-
-#carouselExampleSlidesOnly{
-    margin: auto;
+    width: 258px;
+    border-radius: 5px;
 }
 
 #contenedor{
-    width: 256px;
-    height: 456px;
+    width: 258px;
     position: relative;
     left: 19px;
-    top: 80px;
+    top: 19px;
 }

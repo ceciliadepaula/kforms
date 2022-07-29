@@ -45,9 +45,34 @@
         .imgPasos{
             margin: 30px 0; 
             display: none;
-            .imgPaso{
-                height: 606px;
-                align-self: center;
+            div.mockupPasos{
+                display: flex;
+                position: relative;
+                z-index: 10;
+                justify-content: center;
+                .imgPaso{
+                    position: relative;
+                    top: px;
+                    left: 0;
+                    width: 0;
+                    img{
+                        border-radius: 10px;
+                        width: 258px;
+                        height: 570px;
+                        align-self: center;  
+                        position: relative;
+                        left: 19px;
+                        top: 18px;
+                    }                    
+                }
+                .imgCel{
+                    position: relative;
+                    z-index: 10;
+                    img{
+                        width: 294px;
+                        height: 606px;
+                    }
+                }
             }
             .circuloFondoPasos{
                 align-self: center;
@@ -61,7 +86,7 @@
                 bottom: 550px;
                 margin-bottom: -400px;
                 z-index: -10;
-            }
+            } 
         }
     }
 }
