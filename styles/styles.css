@@ -497,7 +497,7 @@ header #contBotonIngresar #botonLlamanos #p_numLlamanos #iconLlamanos {
 
 #habilitacion .divisionPasos .imgPasos div.mockupPasos .imgPaso {
   position: relative;
-  top: px;
+  top: 0px;
   left: 0;
   width: 0;
 }
@@ -635,12 +635,46 @@ header #contBotonIngresar #botonLlamanos #p_numLlamanos #iconLlamanos {
           justify-content: space-evenly;
 }
 
-#demo #imgCelDemo div .imgDemo {
-  height: 606px;
+#demo #imgCelDemo div div.mockupPasos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
   z-index: 10;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+#demo #imgCelDemo div div.mockupPasos .imgPaso {
+  position: relative;
+  top: 0px;
+  left: 0;
+  width: 0;
+}
+
+#demo #imgCelDemo div div.mockupPasos .imgPaso img {
+  border-radius: 10px;
+  width: 260px;
+  height: 570px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  position: relative;
+  left: 145px;
+}
+
+#demo #imgCelDemo div div.mockupPasos .imgCel {
+  position: relative;
+  z-index: 10;
+}
+
+#demo #imgCelDemo div div.mockupPasos .imgCel img {
+  width: 294px;
+  height: 606px;
 }
 
 #demo #imgCelDemo div #demo2 {
@@ -651,7 +685,7 @@ header #contBotonIngresar #botonLlamanos #p_numLlamanos #iconLlamanos {
 #demo #imgCelDemo #circuloFondoDemo {
   background-color: #07617D;
   mix-blend-mode: multiply;
-  width: 100vw;
+  width: 100%;
   height: 100vw;
   max-width: 600px;
   max-height: 600px;
@@ -939,10 +973,46 @@ footer .txtFooter {
     margin-right: 10%;
     margin-left: 10%;
   }
-  main #demo #grillaDemo #imgCelDemo div .imgDemo {
+  main #demo #grillaDemo #imgCelDemo div {
+    /* .imgDemo{
+                            width: 252px;
+                            height: auto;
+                            margin-top: 0;
+                        }} */
+  }
+  main #demo #grillaDemo #imgCelDemo div div.mockupPasos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    z-index: 10;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main #demo #grillaDemo #imgCelDemo div div.mockupPasos .imgPaso {
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 0;
+  }
+  main #demo #grillaDemo #imgCelDemo div div.mockupPasos .imgPaso img {
+    border-radius: 10px;
+    width: 218px;
+    height: 485px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    position: relative;
+    left: 125px;
+  }
+  main #demo #grillaDemo #imgCelDemo div div.mockupPasos .imgCel {
+    position: relative;
+    z-index: 10;
+  }
+  main #demo #grillaDemo #imgCelDemo div div.mockupPasos .imgCel img {
     width: 252px;
-    height: auto;
-    margin-top: 0;
+    height: 519px;
   }
   main #demo #grillaDemo #imgCelDemo div #demo1 {
     margin-bottom: 150px;

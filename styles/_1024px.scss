@@ -158,18 +158,47 @@
                 margin-left: 10%;
                 #imgCelDemo{
                      div{
-                        .imgDemo{
+                        div.mockupPasos{
+                            display: flex;
+                            position: relative;
+                            z-index: 10;
+                            justify-content: center;
+                            .imgPaso{
+                                position: relative;
+                                top: 0px;
+                                left: 0;
+                                width: 0;
+                                img{
+                                    border-radius: 10px;
+                                    width: 218px;
+                                    height: 485px;
+                                    align-self: center;  
+                                    position: relative;
+                                    left: 125px;
+                                }                    
+                            }
+                            .imgCel{
+                                position: relative;
+                                z-index: 10;
+                                img{
+                                    width: 252px;
+                                    height: 519px;
+                                }
+                            }
+                        }
+
+                        /* .imgDemo{
                             width: 252px;
                             height: auto;
                             margin-top: 0;
-                        }
+                        }} */
                         #demo1{
                             margin-bottom: 150px;
                         }
                         #demo2{
                             display: inherit;
                             margin-top: 250px;
-                        }
+                        }                        
                     }
                     #circuloFondoDemo{
                         bottom: 600px;
